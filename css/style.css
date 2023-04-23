@@ -121,5 +121,27 @@ select {
   color: hsl(224deg, 30%, 27%);
   margin-block-end: 1.25rem;
 }
+.summary__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-block-end: 2rem;
+  font-size: 1.125rem;
+}
+.summary__list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 12px;
+}
+.summary__list-item strong {
+  color: #000;
+}
+.summary__list-item--content {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
 
 /*# sourceMappingURL=style.css.map */

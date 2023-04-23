@@ -8,4 +8,30 @@
     color: $dark-gray-blue;
     margin-block-end: 1.25rem;
   }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-block-end: 2rem;
+    font-size: $fs-para-body;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+      border-radius: 12px;
+
+      strong {
+        color: #000;
+      }
+
+      &--content {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+      }
+    }
+  }
 }
