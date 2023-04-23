@@ -1,0 +1,11 @@
+@use '../abstracts/' as *;
+
+.summary {
+  padding-block: 2rem;
+  padding-inline: 2rem;
+
+  &__heading {
+    color: $dark-gray-blue;
+    margin-block-end: 1.25rem;
+  }
+}
