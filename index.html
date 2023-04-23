@@ -22,16 +22,17 @@
     <title>Frontend Mentor | Results summary component</title>
   </head>
   <body>
-    <main>
-      <div>
-        <!-- RESULT COMPONENT -->
-        <section>
-          <h1>Result</h1>
-          <div>
-            <p>76</p>
-            <p>of 100</p>
+    <main class="main">
+      <div class="result-summary__container">
+        <section class="result">
+          <h1 class="result__heading">Your Result</h1>
+
+          <div class="result__total">
+            <p class="result__score">76</p>
+            <p class="result__total-score">of 100</p>
           </div>
-          <div>
+
+          <div class="result__description">
             <h3>Great</h3>
             <p>
               You scored higher than 65% of the people who have taken these
@@ -40,44 +41,44 @@
           </div>
         </section>
 
-        <section>
-          <h2>Summary</h2>
-          <ul>
-            <li>
+        <section class="summary">
+          <h2 class="summary__heading">Summary</h2>
+          <ul class="summary__list">
+            <li class="summary__reaction">
               <div>
                 <!-- LOGO -->
                 <p>Reaction</p>
               </div>
 
-              <p><strong>80</strong> / 100</p>
+              <p class="summary__score"><strong>80</strong> / 100</p>
             </li>
-            <li>
+            <li class="summary__memory">
               <div>
                 <!-- Logo -->
                 <p>Memory</p>
               </div>
 
-              <p><strong>92</strong> / 100</p>
+              <p class="summary__score"><strong>92</strong> / 100</p>
             </li>
-            <li>
+            <li class="summary__verbal">
               <div>
                 <!-- LOGO -->
                 <p>Verbal</p>
               </div>
 
-              <p><strong>61</strong> / 100</p>
+              <p class="summary__score"><strong>61</strong> / 100</p>
             </li>
-            <li>
+            <li class="summary__visual">
               <div>
                 <!-- LOGO -->
                 <p>Visual</p>
               </div>
 
-              <p><strong>72</strong> / 100</p>
+              <p class="summary__score"><strong>72</strong> / 100</p>
             </li>
           </ul>
 
-          <button>Continue</button>
+          <button class="btn__continue">Continue</button>
         </section>
       </div>
     </main>

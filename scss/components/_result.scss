@@ -1,1 +1,46 @@
+@use '../abstracts/' as *;
 
+.result {
+  background-image: linear-gradient($bg-light-slate-blue, $bg-light-royal-blue);
+  text-align: center;
+  padding-block: 1rem;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+
+  &__heading {
+    color: $light-lavender;
+  }
+
+  &__score {
+    color: $white;
+    font-size: 3.5rem;
+    font-weight: $fw-800;
+  }
+
+  &__total {
+    border-radius: 100px;
+    width: 150px;
+    padding: 1rem;
+    margin-inline: auto;
+    background: linear-gradient($circle-violet-blue, $circle-persian-blue);
+    margin-block: 1.25rem;
+
+    &-score {
+      color: $light-lavender;
+    }
+  }
+
+  &__description {
+    h3 {
+      color: $white;
+      font-size: 1.5rem;
+    }
+
+    p {
+      color: $light-lavender;
+      width: 70%;
+      margin-inline: auto;
+    }
+    padding-block-end: 1.25rem;
+  }
+}
