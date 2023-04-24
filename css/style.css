@@ -135,13 +135,36 @@ select {
   padding: 1rem;
   border-radius: 12px;
 }
-.summary__list-item strong {
-  color: #000;
-}
 .summary__list-item--content {
   display: flex;
   gap: 1rem;
   align-items: center;
+}
+.summary__score {
+  color: hsl(241deg, 100%, 89%);
+}
+.summary__score strong {
+  color: hsl(224deg, 30%, 27%);
+}
+
+.reaction {
+  background-color: hsla(0deg, 100%, 67%, 0.05);
+  color: hsl(0deg, 100%, 67%);
+}
+
+.memory {
+  background-color: hsla(39deg, 100%, 56%, 0.05);
+  color: hsl(39deg, 100%, 56%);
+}
+
+.verbal {
+  background-color: hsla(166deg, 100%, 37%, 0.05);
+  color: hsl(166deg, 100%, 37%);
+}
+
+.visual {
+  background-color: hsla(234deg, 85%, 45%, 0.05);
+  color: hsl(234deg, 85%, 45%);
 }
 
 /*# sourceMappingURL=style.css.map */

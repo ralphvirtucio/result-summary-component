@@ -6,51 +6,38 @@ fetch('./data.json')
 
 const createNodes = (datas) => {
   datas.map((data) => {
-    const summaryListItem = document.createElement('li');
-    const summaryListItemContent = document.createElement('div');
-    const summaryLogo = document.createElement('img');
-    const summaryText = document.createElement('p');
-    const summaryScore = document.createElement('p');
-
-    summaryLogo.setAttribute('src', data.icon);
-    summaryText.textContent = data.category;
-
-    summaryListItemContent.append(summaryLogo);
-    summaryListItemContent.appendChild(summaryText);
-    summaryListItemContent.classList.add('summary__list-item--content');
-
-    let score = `<strong>${data.score}</strong>  / 100`;
-
-    summaryScore.insertAdjacentHTML('afterbegin', score);
-    summaryScore.style.color = 'hsl(224, 30%, 27%)';
-
-    summaryListItem.append(summaryListItemContent);
-    summaryListItem.appendChild(summaryScore);
-
-    summaryList.append(summaryListItem);
-
-    summaryListItem.classList.add('summary__list-item');
+    let dynamicStyle = '';
 
     switch (data.category.toLowerCase()) {
       case 'reaction':
-        summaryListItem.style.backgroundColor = 'hsl(0, 100%, 67%)';
-        summaryText.style.color = 'hsl(0, 100%, 67%)';
+        dynamicStyle = `reaction`;
         break;
       case 'memory':
-        summaryListItem.style.backgroundColor = 'hsl(39, 100%, 56%)';
-        summaryText.style.color = 'hsl(39, 100%, 56%)';
+        dynamicStyle = `memory`;
 
         break;
       case 'verbal':
-        summaryListItem.style.backgroundColor = 'hsl(166, 100%, 37%)';
-        summaryText.style.color = 'hsl(166, 100%, 37%)';
+        dynamicStyle = `verbal`;
 
         break;
       case 'visual':
-        summaryListItem.style.backgroundColor = 'hsl(234, 85%, 45%)';
-        summaryText.style.color = 'hsl(234, 85%, 45%)';
+        dynamicStyle = 'visual';
         break;
       default:
+        dynamicStyle = '';
     }
+
+    const summaryListItem = `<li class="summary__list-item ${dynamicStyle}">
+    <div class="summary__list-item--content">
+      <img src=${data.icon} alt=${data.category} />
+      <p>${data.category}</p>
+    </div>
+    
+    <p class="summary__score"><strong>${data.score}</strong> / 100</p>
+    </li>`;
+
+    console.log(summaryListItem);
+
+    summaryList.insertAdjacentHTML('beforeend', summaryListItem);
   });
 };

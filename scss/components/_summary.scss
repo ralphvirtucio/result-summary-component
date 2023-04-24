@@ -23,10 +23,6 @@
       padding: 1rem;
       border-radius: 12px;
 
-      strong {
-        color: #000;
-      }
-
       &--content {
         display: flex;
         gap: 1rem;
@@ -34,4 +30,32 @@
       }
     }
   }
+
+  &__score {
+    color: $light-lavender;
+
+    strong {
+      color: $dark-gray-blue;
+    }
+  }
+}
+
+.reaction {
+  background-color: hsla(0, 100%, 67%, 0.05);
+  color: hsl(0, 100%, 67%);
+}
+
+.memory {
+  background-color: hsla(39, 100%, 56%, 0.05);
+  color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+  background-color: hsla(166, 100%, 37%, 0.05);
+  color: hsl(166, 100%, 37%);
+}
+
+.visual {
+  background-color: hsla(234, 85%, 45%, 0.05);
+  color: hsl(234, 85%, 45%);
 }
