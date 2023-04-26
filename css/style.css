@@ -81,6 +81,11 @@ select {
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
 }
+@media screen and (min-width: 1024px) {
+  .result {
+    border-radius: 24px;
+  }
+}
 .result__heading {
   color: hsl(241deg, 100%, 89%);
 }
@@ -117,6 +122,12 @@ select {
   padding-block: 2rem;
   padding-inline: 2rem;
 }
+@media screen and (min-width: 1024px) {
+  .summary {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 24px;
+  }
+}
 .summary__heading {
   color: hsl(224deg, 30%, 27%);
   margin-block-end: 1.25rem;
@@ -127,6 +138,11 @@ select {
   gap: 2rem;
   margin-block-end: 2rem;
   font-size: 1.125rem;
+}
+@media screen and (min-width: 1024px) {
+  .summary__list {
+    padding-inline: 1rem;
+  }
 }
 .summary__list-item {
   display: flex;
@@ -142,9 +158,11 @@ select {
 }
 .summary__score {
   color: hsl(241deg, 100%, 89%);
+  font-weight: 500;
 }
 .summary__score strong {
   color: hsl(224deg, 30%, 27%);
+  font-weight: 800;
 }
 
 .reaction {
@@ -165,6 +183,39 @@ select {
 .visual {
   background-color: hsla(234deg, 85%, 45%, 0.05);
   color: hsl(234deg, 85%, 45%);
+}
+
+.btn__continue {
+  background-color: hsl(224deg, 30%, 27%);
+  color: hsl(0deg, 0%, 100%);
+  border: none;
+  border-radius: 100px;
+  width: 100%;
+  padding-block: 1rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    display: grid;
+    place-items: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main {
+    max-width: 50%;
+    width: 90rem;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .result-summary__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

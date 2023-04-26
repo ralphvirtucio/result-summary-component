@@ -2,9 +2,9 @@ const summaryList = document.querySelector('.summary__list');
 
 fetch('./data.json')
   .then((response) => response.json())
-  .then((json) => createNodes(json));
+  .then((json) => mappedData(json));
 
-const createNodes = (datas) => {
+const mappedData = (datas) => {
   datas.map((data) => {
     let dynamicStyle = '';
 
@@ -35,8 +35,6 @@ const createNodes = (datas) => {
     
     <p class="summary__score"><strong>${data.score}</strong> / 100</p>
     </li>`;
-
-    console.log(summaryListItem);
 
     summaryList.insertAdjacentHTML('beforeend', summaryListItem);
   });

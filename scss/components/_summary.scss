@@ -4,6 +4,11 @@
   padding-block: 2rem;
   padding-inline: 2rem;
 
+  @media screen and (min-width: 1024px) {
+    box-shadow: 0 5px 5px rgba($color: #000000, $alpha: 0.15);
+    border-radius: 24px;
+  }
+
   &__heading {
     color: $dark-gray-blue;
     margin-block-end: 1.25rem;
@@ -15,6 +20,10 @@
     gap: 2rem;
     margin-block-end: 2rem;
     font-size: $fs-para-body;
+
+    @media screen and (min-width: 1024px) {
+      padding-inline: 1rem;
+    }
 
     &-item {
       display: flex;
@@ -33,9 +42,11 @@
 
   &__score {
     color: $light-lavender;
+    font-weight: $fw-500;
 
     strong {
       color: $dark-gray-blue;
+      font-weight: $fw-800;
     }
   }
 }
@@ -58,4 +69,15 @@
 .visual {
   background-color: hsla(234, 85%, 45%, 0.05);
   color: hsl(234, 85%, 45%);
+}
+
+.btn__continue {
+  background-color: $dark-gray-blue;
+  color: $white;
+  border: none;
+  border-radius: 100px;
+  width: 100%;
+  padding-block: 1rem;
+  font-size: 1.25rem;
+  cursor: pointer;
 }

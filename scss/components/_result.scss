@@ -7,6 +7,10 @@
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
 
+  @media screen and (min-width: 1024px) {
+    border-radius: 24px;
+  }
+
   &__heading {
     color: $light-lavender;
   }
