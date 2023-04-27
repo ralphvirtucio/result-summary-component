@@ -84,6 +84,7 @@ select {
 @media screen and (min-width: 1024px) {
   .result {
     border-radius: 24px;
+    padding-block-start: 2rem;
   }
 }
 .result__heading {
@@ -94,6 +95,11 @@ select {
   font-size: 3.5rem;
   font-weight: 800;
 }
+@media screen and (min-width: 1024px) {
+  .result__score {
+    font-size: 5rem;
+  }
+}
 .result__total {
   border-radius: 100px;
   width: 150px;
@@ -101,6 +107,13 @@ select {
   margin-inline: auto;
   background: linear-gradient(hsl(256deg, 72%, 46%), hsla(241deg, 72%, 46%, 0));
   margin-block: 1.25rem;
+}
+@media screen and (min-width: 1024px) {
+  .result__total {
+    margin-block: 3rem;
+    width: 200px;
+    padding-block: 2rem;
+  }
 }
 .result__total-score {
   color: hsl(241deg, 100%, 89%);
@@ -112,10 +125,20 @@ select {
   color: hsl(0deg, 0%, 100%);
   font-size: 1.5rem;
 }
+@media screen and (min-width: 1024px) {
+  .result__description h3 {
+    margin-block-end: 1rem;
+  }
+}
 .result__description p {
   color: hsl(241deg, 100%, 89%);
   width: 70%;
   margin-inline: auto;
+}
+@media screen and (min-width: 1024px) {
+  .result__description p {
+    width: 55%;
+  }
 }
 
 .summary {

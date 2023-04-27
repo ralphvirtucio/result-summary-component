@@ -9,6 +9,7 @@
 
   @media screen and (min-width: 1024px) {
     border-radius: 24px;
+    padding-block-start: 2rem;
   }
 
   &__heading {
@@ -19,6 +20,10 @@
     color: $white;
     font-size: 3.5rem;
     font-weight: $fw-800;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 5rem;
+    }
   }
 
   &__total {
@@ -29,6 +34,12 @@
     background: linear-gradient($circle-violet-blue, $circle-persian-blue);
     margin-block: 1.25rem;
 
+    @media screen and (min-width: 1024px) {
+      margin-block: 3rem;
+      width: 200px;
+      padding-block: 2rem;
+    }
+
     &-score {
       color: $light-lavender;
     }
@@ -38,12 +49,19 @@
     h3 {
       color: $white;
       font-size: 1.5rem;
+
+      @media screen and (min-width: 1024px) {
+        margin-block-end: 1rem;
+      }
     }
 
     p {
       color: $light-lavender;
       width: 70%;
       margin-inline: auto;
+      @media screen and (min-width: 1024px) {
+        width: 55%;
+      }
     }
     padding-block-end: 1.25rem;
   }
