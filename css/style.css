@@ -209,7 +209,7 @@ select {
 }
 
 .btn__continue {
-  background-color: hsl(224deg, 30%, 27%);
+  background-image: linear-gradient(hsl(224deg, 30%, 27%), hsl(224deg, 30%, 27%));
   color: hsl(0deg, 0%, 100%);
   border: none;
   border-radius: 100px;
@@ -217,6 +217,10 @@ select {
   padding-block: 1rem;
   font-size: 1.25rem;
   cursor: pointer;
+  transition: background-image 0.2s;
+}
+.btn__continue:hover {
+  background-image: linear-gradient(hsl(252deg, 100%, 67%), hsl(241deg, 81%, 54%));
 }
 
 @media screen and (min-width: 1024px) {

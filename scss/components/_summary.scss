@@ -72,7 +72,7 @@
 }
 
 .btn__continue {
-  background-color: $dark-gray-blue;
+  background-image: linear-gradient($dark-gray-blue, $dark-gray-blue);
   color: $white;
   border: none;
   border-radius: 100px;
@@ -80,4 +80,12 @@
   padding-block: 1rem;
   font-size: 1.25rem;
   cursor: pointer;
+  transition: background-image 0.2s;
+
+  &:hover {
+    background-image: linear-gradient(
+      $bg-light-slate-blue,
+      $bg-light-royal-blue
+    );
+  }
 }
