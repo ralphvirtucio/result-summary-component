@@ -1,3 +1,5 @@
+@use '../abstracts/' as *;
+
 body {
   @media screen and (min-width: 1024px) {
     display: grid;
@@ -6,10 +8,14 @@ body {
 }
 
 .main {
+  background-color: $white;
+  border-radius: 24px;
+
   @media screen and (min-width: 1024px) {
     max-width: 80%;
     width: 50rem;
     margin-inline: auto;
+    box-shadow: 15px 15px 25px hsla(241, 81%, 54%, 0.05);
   }
 }
 

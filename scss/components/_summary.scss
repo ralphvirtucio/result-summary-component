@@ -4,10 +4,9 @@
   padding-block: 2rem;
   padding-inline: 2rem;
 
-  @media screen and (min-width: 1024px) {
-    box-shadow: 15px 15px 20px hsla(241, 81%, 54%, 0.05);
-    border-radius: 24px;
-  }
+  // @media screen and (min-width: 1024px) {
+  //   box-shadow: 15px 15px 20px hsla(241, 81%, 54%, 0.05);
+  // }
 
   &__heading {
     color: $dark-gray-blue;

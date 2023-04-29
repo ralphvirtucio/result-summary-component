@@ -145,12 +145,6 @@ select {
   padding-block: 2rem;
   padding-inline: 2rem;
 }
-@media screen and (min-width: 1024px) {
-  .summary {
-    box-shadow: 15px 15px 20px hsla(241deg, 81%, 54%, 0.05);
-    border-radius: 24px;
-  }
-}
 .summary__heading {
   color: hsl(224deg, 30%, 27%);
   margin-block-end: 1.25rem;
@@ -230,11 +224,16 @@ select {
   }
 }
 
+.main {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 24px;
+}
 @media screen and (min-width: 1024px) {
   .main {
     max-width: 80%;
     width: 50rem;
     margin-inline: auto;
+    box-shadow: 15px 15px 25px hsla(241deg, 81%, 54%, 0.05);
   }
 }
 
